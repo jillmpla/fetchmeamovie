@@ -1,6 +1,6 @@
 # 🎬 Fetch Me a Movie
 
-A sleek and responsive React app that lets users search for movies by title, browse matching results, and view detailed information powered by the [OMDb API](https://www.omdbapi.com/).
+A responsive, accessible movie finder built with React. Search by title to browse posters and quick facts, then view full details including director, cast, plot, and runtime, powered by the [OMDb API](https://www.omdbapi.com/).
 
 ---
 
@@ -25,20 +25,20 @@ Try the app live here: **[fetchmeamovie.com](https://fetchmeamovie.com)**
 - Validates IMDb IDs and handles bad requests 
 - Displays fallback mock data if the API is unavailable
 
-### UI/UX Improvements
-- Fully responsive layout using modern, accessible styling
-- Consistent use of color palette, spacing, and the Poppins font
-- Visually enhanced loading states and error handling
+### UI and UX
+- Token-based theme using brand palette and solid dark surfaces
+- Manrope font with larger base size for readability
+- Fully responsive layout with consistent spacing
+- Animated gradient borders on panels (content stays on solid backgrounds)
+- Pill-style nav buttons with gradient ring on hover/focus
+- Subtle result fade-ins; clear loading/error states; reduced-motion friendly
 
 ### Accessibility
-
-Accessibility is built into the core of the user experience:
-
-- **ARIA Labels:** Interactive elements, like search inputs and links, are labeled for screen readers.
-- **Keyboard Navigation:**  
-  - Movie search results are fully keyboard focusable via `tabIndex`  
-  - Each movie link is accessible with keyboard controls  
-- **Live Feedback:** Clear feedback is shown for loading, search errors, and fallbacks without disrupting navigation
+- Semantic roles and ARIA labels on interactive elements
+- Keyboard-friendly: visible focus rings; all results are tabbable links
+- Live status messaging for loading and errors
+- High contrast: white text on dark surfaces (WCAG-friendly)
+- Respects `prefers-reduced-motion`
 
 ---
 
@@ -106,9 +106,8 @@ src/
   │    ├─ MovieList.js
   ├─ data/
   │    └─ moviesData.js
-  ├─ App.js
   ├─ App.css
-  ├─ index.css
+  ├─ App.js
   └─ index.js
 ```
 
