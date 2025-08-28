@@ -15,9 +15,7 @@ function Footer() {
     <footer role="contentinfo">
       <div className="footer-inner">
         <span>&copy; {year}</span>
-
-        <span className="divider">◆</span>
-
+        <span className="divider">|</span>
         <Link
           to="/"
           className="footer-link"
@@ -26,18 +24,10 @@ function Footer() {
         >
           Fetch Me a Movie
         </Link>
-
-        <span className="divider">◆</span>
-
-        <span>
-          <span className="emoji" aria-hidden="true">🎬</span> All rights reserved.
-        </span>
-
-        <span className="divider">◆</span>
-
-        <span>
-          Made with <span className="emoji" aria-hidden="true">💙</span> for reel fans.
-        </span>
+        <span className="divider">|</span>
+        <span><span className="emoji" aria-hidden="true">🎬</span> All rights reserved.</span>
+        <span className="divider">|</span>
+        <span>Made with <span className="emoji" aria-hidden="true">💙</span> for reel fans.</span>
       </div>
     </footer>
   );
