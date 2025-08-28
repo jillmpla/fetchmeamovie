@@ -13,11 +13,13 @@ function Footer(){
 
     return (
         <footer role="contentinfo">
-            <div className="footer-inner">
-                <span>&copy; {year} </span>
-                <Link to="/" className="footer-link" aria-label="Go to homepage" onClick={handleBrandClick}>Fetch Me a Movie</Link>
-                <span> · All rights reserved.</span>
-            </div>
+          <div className="footer-inner">
+            <span>&copy; {year} </span>
+            <Link to="/" className="footer-link" aria-label="Go to homepage" onClick={handleBrandClick}>
+              Fetch Me a Movie
+            </Link>
+            <span> · 🎬 All rights reserved · Made with ❤️ for movie lovers</span>
+          </div>
         </footer>
     );
 }
