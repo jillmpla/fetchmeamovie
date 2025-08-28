@@ -386,11 +386,15 @@ main{ display:block; }
   border:2px solid rgba(255,255,255,.28);
   color:#fff;
   text-decoration:none;
-  font-weight:800;
+  font-family: inherit;      
+  font-weight: 800;         
+  font-size: 1.05rem;       
+  text-transform: none;      
+  letter-spacing: normal;    
+
   padding:.65rem 1rem;
   border-radius:12px;
   cursor:pointer;
-  font-size:1.05rem;
   position:relative;
   transition:
     background-color .18s ease,
@@ -436,7 +440,6 @@ footer::before{
   margin: 0 auto;
   padding: 18px 22px;
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -468,20 +471,13 @@ footer::before{
   border-radius: 8px;
 }
 
-.footer-inner > * + *{
-  position: relative;
-  padding-left: 14px;
-}
-
 .footer-inner > * + *::before{
-  content: "·";       
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-52%); 
+  content: "◆";
+  display: inline-block;
+  margin: 0 12px;
   opacity: .6;
   font-weight: 700;
-  font-size: 0.95em;   
+  font-size: .9em;
 }
 
 .footer-inner :where(span){
@@ -496,9 +492,7 @@ footer::before{
 }
 
 @media (max-width: 420px){
-  .footer-inner{ gap: 6px; }
-  .footer-inner > * + *{ padding-left: 10px; }
-  .footer-inner > * + *::before{ left: 0; }
+  .footer-inner > * + *::before{ margin: 0 8px; }
 }
 
 @media (prefers-reduced-motion: reduce){
