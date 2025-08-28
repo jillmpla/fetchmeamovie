@@ -374,40 +374,44 @@ main{ display:block; }
     outline-offset:3px;
 }*/
 
-/* Back button that matches Home button */
-.btn-back {
-    appearance:none;
-    border:2px solid rgba(255,255,255,.28);
-    background-color: rgba(6,20,38,.45);
-    color:#fff;
-    text-decoration:none;
-    font-weight:800;
-    padding:.65rem 1rem;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:1.05rem;
-    position:relative;
-    transition:
-        background-color .18s ease,
-        border-color .18s ease,
-        box-shadow .18s ease,
-        transform .18s ease;
-    backdrop-filter: blur(4px);
+/* ==========================================================================
+   Back button that matches Home button
+   ========================================================================== */
+.btn-back{
+  background: rgba(6,20,38,.45);  
+  box-shadow: none;
+  filter: none;
+
+  appearance:none;
+  border:2px solid rgba(255,255,255,.28);
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  padding:.65rem 1rem;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:1.05rem;
+  position:relative;
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease;
+  backdrop-filter: blur(4px);
 }
 
 .btn-back:hover,
-.btn-back:focus-visible {
-    border-color: transparent;
-    background:
-        linear-gradient(rgba(6,20,38,.55), rgba(6,20,38,.55)) padding-box,
-        linear-gradient(90deg, var(--brand-500), var(--teal-500), var(--mint-400)) border-box;
-    transform: translateY(-1px);
-    box-shadow: 0 8px 18px rgba(0,0,0,.28);
+.btn-back:focus-visible{
+  border-color: transparent;
+  background:
+    linear-gradient(rgba(6,20,38,.55), rgba(6,20,38,.55)) padding-box,
+    linear-gradient(90deg, var(--brand-500), var(--teal-500), var(--mint-400)) border-box;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.28);
+  filter: none; 
 }
 
-.btn-back:active {
-    transform: translateY(0);
-}
+.btn-back:active{ transform: translateY(0); }
 
 /* ==========================================================================
    Footer
@@ -452,6 +456,7 @@ footer::before{
   text-decoration-thickness: 1.5px;
   transition: color .15s ease, text-decoration-color .15s ease;
 }
+
 .footer-link:hover, footer a:hover{
   color: var(--mint-400);
   text-decoration-color: currentColor;
@@ -465,15 +470,18 @@ footer::before{
 
 .footer-inner > * + *{
   position: relative;
-  padding-left: 12px;
+  padding-left: 14px;
 }
+
 .footer-inner > * + *::before{
-  content: "•";
+  content: "·";       
   position: absolute;
-  left: 2px;
+  left: 4px;
   top: 50%;
-  transform: translateY(-50%);
-  opacity: .75;
+  transform: translateY(-52%); 
+  opacity: .6;
+  font-weight: 700;
+  font-size: 0.95em;   
 }
 
 .footer-inner :where(span){
@@ -481,6 +489,7 @@ footer::before{
   align-items: center;
   gap: 6px;
 }
+
 .footer-inner :where(span) .emoji{
   display:inline-block;
   transform: translateY(1px);
