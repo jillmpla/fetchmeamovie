@@ -472,14 +472,11 @@ footer::before{
   border-radius: 8px;
 }
 
-.footer-inner > *:not(:last-child)::after{
-  content: "◆";
-  display: inline-block;
+.divider {
   margin: 0 12px;
   opacity: .6;
   font-weight: 700;
   font-size: .9em;
-  vertical-align: middle;
 }
 
 .footer-inner :where(span){
@@ -487,13 +484,14 @@ footer::before{
   align-items: center;
   gap: 6px;
 }
+
 .footer-inner :where(span) .emoji{
   display:inline-block;
   transform: translateY(1px);
 }
 
 @media (max-width: 420px){
-  .footer-inner > *:not(:last-child)::after{ margin: 0 8px; }
+  .divider { margin: 0 8px; }
 }
 
 @media (prefers-reduced-motion: reduce){
