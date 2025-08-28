@@ -14,10 +14,10 @@ function Footer() {
   return (
     <footer role="contentinfo">
       <div className="footer-inner">
-        {/* Year */}
         <span>&copy; {year}</span>
 
-        {/* Brand link */}
+        <span className="divider">◆</span>
+
         <Link
           to="/"
           className="footer-link"
@@ -27,12 +27,14 @@ function Footer() {
           Fetch Me a Movie
         </Link>
 
-        {/* Rights */}
+        <span className="divider">◆</span>
+
         <span>
           <span className="emoji" aria-hidden="true">🎬</span> All rights reserved.
         </span>
 
-        {/* Tagline */}
+        <span className="divider">◆</span>
+
         <span>
           Made with <span className="emoji" aria-hidden="true">💙</span> for reel fans.
         </span>
@@ -42,4 +44,3 @@ function Footer() {
 }
 
 export default Footer;
-
