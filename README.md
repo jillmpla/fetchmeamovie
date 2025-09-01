@@ -47,7 +47,7 @@ Try the app live here: **[fetchmeamovie.com](https://fetchmeamovie.com)**
 ### 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd fetch-me-a-movie
+cd fetchmeamovie
 ```
 
 ### 2. Install dependencies:
