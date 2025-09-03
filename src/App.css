@@ -353,27 +353,6 @@ main{ display:block; }
 .btn:hover{ transform:translateY(-1px); filter:brightness(1.05); box-shadow:0 12px 28px rgba(0,0,0,.3); }
 .btn:active{ transform:translateY(0); }
 
-/* Back button original */
-/*.btn-back{
-    color:#fff;
-    font-size: clamp(1.05rem, 1.2vw, 1.3rem);
-    text-transform: uppercase;
-    letter-spacing:.06em;
-    background: linear-gradient(135deg, var(--brand-700), var(--brand-900));
-    border:2px solid rgba(255,255,255,.22);
-}
-
-.btn-back:hover{
-    filter: brightness(1.06);
-    transform: translateY(-1px);
-    box-shadow: 0 12px 28px rgba(0,0,0,.35);
-}
-
-.btn-back:focus-visible{
-    outline:3px solid var(--mint-400);
-    outline-offset:3px;
-}*/
-
 /* ==========================================================================
    Back button that matches Home button
    ========================================================================== */
@@ -420,56 +399,67 @@ main{ display:block; }
 /* ==========================================================================
    Footer
    ========================================================================== */
-footer{
-  position: relative;
-  border-top: 1px solid rgba(255,255,255,.10);
-  background: linear-gradient(180deg, rgba(7,31,58,.70), rgba(7,31,58,.92));
-  box-shadow: 0 -10px 20px rgba(0,0,0,.25);
-  backdrop-filter: blur(4px);
+footer {
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,.10);
+    background: linear-gradient(180deg, rgba(7,31,58,.70), rgba(7,31,58,.92));
+    box-shadow: 0 -10px 20px rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
 }
 
-footer::before{
-  content:"";
-  position:absolute; left:0; right:0; top:-1px; height:2px;
-  background: linear-gradient(90deg, var(--brand-500), var(--teal-500), var(--mint-400));
-  opacity:.9;
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--brand-500), var(--teal-500), var(--mint-400));
+    opacity: .9;
 }
 
-.footer-inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 18px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: .25px;
-  line-height: 1.4;
-  font-size: clamp(.98rem, .9vw + .6rem, 1.15rem);
-  -webkit-font-smoothing: antialiased;
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .25px;
+    line-height: 1.4;
+    font-size: clamp(.98rem, .9vw + .6rem, 1.15rem);
+    -webkit-font-smoothing: antialiased;
 }
 
-.footer-link, footer a{
-  color: #fff;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1.5px;
-  transition: color .15s ease, text-decoration-color .15s ease;
+.footer-link,
+footer a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .15s ease, text-decoration-color .15s ease;
 }
 
-.footer-link:hover, footer a:hover{
-  color: var(--mint-400);
-  text-decoration-color: currentColor;
+.footer-link:hover,
+footer a:hover {
+    color: var(--mint-400);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: currentColor;
 }
 
-.footer-link:focus-visible, footer a:focus-visible{
-  outline: 3px solid var(--mint-400);
-  outline-offset: 3px;
-  border-radius: 8px;
+.footer-link:focus-visible,
+footer a:focus-visible {
+    outline: 3px solid var(--mint-400);
+    outline-offset: 3px;
+    border-radius: 8px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
 }
 
 .divider {

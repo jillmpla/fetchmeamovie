@@ -96,6 +96,11 @@ public/
   ├─ favicon.ico
   ├─ index.html
   ├─ movieicon.png
+  ├─ aboutprivacy.css 
+  ├─ about.html
+  ├─ privacy.html
+  ├─ sitemap.xml
+  ├─ robots.txt
   └─ preview.png
 
 src/

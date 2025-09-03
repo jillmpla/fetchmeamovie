@@ -1,4 +1,4 @@
-//Entry point for React application that mounts the App component to the DOM.
+//entry point for React application that mounts the App component to the DOM
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';

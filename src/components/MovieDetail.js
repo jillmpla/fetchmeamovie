@@ -1,5 +1,5 @@
 /**
- * MovieDetail.js
+ * //src/components/MovieDetail.js
  *  - Fetches and displays details for a single movie by IMDb ID (from the URL).
  *  - Handles loading and error states.
  *  - Uses accessible markup (landmarks, roles, alt text, aria labels).

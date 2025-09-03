@@ -1,5 +1,5 @@
 /**
- * MovieList.js
+ * //src/components/MovieList.js
  *  - Debounced search UI for OMDb.
  *  - Shows a grid of poster cards when posters exist; falls back to a simple list otherwise.
  *  - Handles loading, empty, and error states (including OMDb's own error messages).

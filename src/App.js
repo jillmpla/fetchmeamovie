@@ -6,23 +6,22 @@ import MovieList from "./components/MovieList";
 import MovieDetail from "./components/MovieDetail";
 import "./App.css";
 
-function App(){
+function App() {
     return (
         <Router>
             <div className="app-shell">
                 <Header />
-
                 <main id="main" role="main">
                     <Routes>
                         <Route path="/" element={<MovieList />} />
                         <Route path="/movies/:id" element={<MovieDetail />} />
                     </Routes>
                 </main>
-
                 <Footer />
             </div>
         </Router>
     );
 }
+
 export default App;
 
